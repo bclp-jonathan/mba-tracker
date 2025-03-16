@@ -6,7 +6,7 @@ import math
 
 # Configuración de la página
 st.set_page_config(
-    page_title="Tracker deuda MBA",
+    page_title="Seguimiento de Pagos MBA BCG",
     page_icon="🎓",
     layout="wide",
 )
@@ -46,7 +46,7 @@ with col1:
         values=[porcentaje_completado, 100-porcentaje_completado],
         labels=['Completado', 'Pendiente'],
         hole=.3,
-        marker_colors=['royalblue', 'lightgray']
+        marker_colors=['#1e8449', 'lightgray']  # Verde oscuro para completado
     )])
     
     fig_pie.update_layout(
@@ -87,7 +87,7 @@ fig_timeline.add_trace(go.Bar(
     x=meses_df[meses_df['Estado'] == 'Completado']['Mes'],
     y=meses_df[meses_df['Estado'] == 'Completado']['Valor'],
     name='Completado',
-    marker_color='royalblue'
+    marker_color='#2ecc71'  # Verde claro para completado
 ))
 
 # Añadir barras pendientes
