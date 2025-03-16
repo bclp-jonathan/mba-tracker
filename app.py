@@ -6,13 +6,13 @@ import math
 
 # Configuración de la página
 st.set_page_config(
-    page_title="Seguimiento de Pagos MBA BCG",
+    page_title="Tracker deuda MBA",
     page_icon="🎓",
     layout="wide",
 )
 
 # Título y descripción
-st.title("🎓 ¿Cuánto has pagado de tu deuda MBA?")
+st.title("🎓 ¿Cuánto has pagado de tu deuda del MBA?")
 
 # Fechas clave
 fecha_inicio = datetime(2024, 8, 1)
